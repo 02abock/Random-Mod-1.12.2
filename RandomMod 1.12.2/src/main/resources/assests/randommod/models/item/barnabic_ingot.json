@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "randommod:item/barnabic_ingot"
+        "layer0": "randommod:items/barnabic_ingot"
     }
 }
