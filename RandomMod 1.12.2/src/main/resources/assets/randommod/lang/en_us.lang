@@ -2,6 +2,9 @@
 item.barnabic_ingot.name=Barnabic Ingot
 
 //Blocks
+tile.barnabic_ore.name=Barnabic Ore
+tile.barnabic_block.name=Barnabic Block
+tile.cheese_block.name=Wheel of Cheese
 
 //Tools
 item.pickle_sword.name=Pickle Sword
