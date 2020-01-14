@@ -10,7 +10,7 @@ import net.minecraft.block.material.Material;
 
 public class ModBlocks 
 {
-	//to add a new item: add to this file, add a model, add a texture, and add it to the lang file
+	//to add a new item: add to this file, add a block+item model, add a texture, and add it to the lang file
 	
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
