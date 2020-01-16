@@ -12,7 +12,7 @@ public class CheeseBlock extends BlockBase
 		setSoundType(SoundType.SLIME); //sound while walking over
 		setHardness(5.0f); //how long it takes to break
 		setResistance(5.0f); //how resistant to explosives
-		setHarvestLevel("sword", 0); // 0-3 wood to diamond
+		setHarvestLevel("sword", 1); // 0-3 wood to diamond
 	}
 
 }
