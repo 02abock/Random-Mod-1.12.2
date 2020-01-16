@@ -12,7 +12,6 @@ public class BarnabicOre extends BlockBase
 		setHardness(5.0f); //how long it takes to break
 		setResistance(15.0f); //how resistant to explosives
 		setHarvestLevel("pickaxe", 3); // 0-3 wood to diamond
-		setLightLevel(1.0f); //emit light?
 	}
 
 }
