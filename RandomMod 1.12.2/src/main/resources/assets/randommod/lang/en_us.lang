@@ -1,5 +1,8 @@
 //Items
 item.barnabic_ingot.name=Barnabic Ingot
+item.flour.name=Flour
+item.powdered_sugar.name=Powdered Sugar
+item.glaze.name=Glaze
 
 //Blocks
 tile.barnabic_ore.name=Barnabic Ore
@@ -8,3 +11,15 @@ tile.cheese_block.name=Wheel of Cheese
 
 //Tools
 item.pickle_sword.name=Pickle Sword
+
+//Food
+item.dough.name=Dough
+item.flour.name=Flour
+item.unbaked_elongated_donut.name=Unbaked Elongated Donut
+item.unbaked_donut.name=Unbaked Donut
+item.unbaked_pretzel.name=Unbaked Pretzel
+item.elongated_donut.name=Elongated Donut
+item.donut.name=Donut
+item.pretzel.name=Pretzel
+item.glazed_donut.name=Glazed Donut
+item.powdered_donut.name=Powdered Donut
