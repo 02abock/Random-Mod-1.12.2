@@ -2,9 +2,11 @@ package com.RandomMod;
 
 import com.RandomMod.init.ModRecipes;
 import com.RandomMod.proxy.CommonProxy;
+import com.RandomMod.tabs.RandomTab;
 import com.RandomMod.util.Reference;
 import com.RandomMod.world.ModWorldGen;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -17,6 +19,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid= Reference.MOD_ID, name= Reference.NAME, version = Reference.VERSION)
 public class Main 
 {
+	public static final CreativeTabs RANDOM_TAB = new RandomTab("randomtab");
 	
 	@Instance
 	public static Main instance;

@@ -14,7 +14,7 @@ public class FoodBase extends ItemFood implements IHasModel
 		super(amount, saturation, isWolfFood);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.MISC);
+		setCreativeTab(Main.RANDOM_TAB);
 		
 		ModItems.ITEMS.add(this);
 
