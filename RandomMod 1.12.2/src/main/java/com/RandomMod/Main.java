@@ -1,5 +1,6 @@
 package com.RandomMod;
 
+import com.RandomMod.init.ModRecipes;
 import com.RandomMod.proxy.CommonProxy;
 import com.RandomMod.util.Reference;
 import com.RandomMod.world.ModWorldGen;
@@ -33,7 +34,7 @@ public class Main
 	@EventHandler
 	public static void init(FMLInitializationEvent event) 
 	{
-		
+		ModRecipes.init(); //initializes smelting recipes
 	}
 	
 	@EventHandler
@@ -41,5 +42,4 @@ public class Main
 	{
 		
 	}
-	//18:42 on Custom Food video
 }

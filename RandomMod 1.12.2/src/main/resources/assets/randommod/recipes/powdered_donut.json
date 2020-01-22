@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": 
+    [
+        "s",
+        "d"
+    ],
+    
+    "key": 
+    {
+        "s": {"item": "randommod:powdered_sugar"},
+        "d": {"item": "randommod:donut"}
+    },
+    
+    "result": {"item": "randommod:powdered_donut"}
+}
