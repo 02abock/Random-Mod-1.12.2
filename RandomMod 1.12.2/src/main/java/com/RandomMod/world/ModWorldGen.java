@@ -24,11 +24,11 @@ public class ModWorldGen implements IWorldGenerator {
 	
 	private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)
 			{
-		generatoeOre(ModBlocks.BARNABIC_ORE.getDefaultState(),world, random, chunkX * 16, chunkZ * 16, 4 , 100, random.nextInt(7) + 4,20);
+		generateOre(ModBlocks.BARNABIC_ORE.getDefaultState(),world, random, chunkX * 16, chunkZ * 16, 4 , 100, random.nextInt(7) + 4,20);
 		
 			}
 	
-	private void generatoeOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances)
+	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances)
 	{
 		int deltaY = maxY -minY;
 		

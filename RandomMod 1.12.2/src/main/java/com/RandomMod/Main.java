@@ -1,9 +1,11 @@
 package com.RandomMod;
 
+import com.RandomMod.entity.EntityInit;
 import com.RandomMod.init.ModRecipes;
 import com.RandomMod.proxy.CommonProxy;
 import com.RandomMod.tabs.RandomTab;
 import com.RandomMod.util.Reference;
+import com.RandomMod.util.handlers.RenderHandler;
 import com.RandomMod.world.ModWorldGen;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -31,6 +33,8 @@ public class Main
 	public static void PreInit(FMLPreInitializationEvent event) 
 	{
 		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+		EntityInit.RegisterEntities();
+		RenderHandler.RegisterEntityRenders();
 		
 	}
 	
@@ -45,4 +49,5 @@ public class Main
 	{
 		
 	}
+	//12.33 in 1.12.2 Harry Talks Entities
 }
