@@ -26,3 +26,6 @@ item.powdered_donut.name=Powdered Donut
 
 //Tabs
 itemGroup.randomtab=Random Mod
+
+//Entities
+entity.squirrel.name=Squirrel
