@@ -1,6 +1,7 @@
 package com.RandomMod.entity;
 
 import com.RandomMod.init.ModItems;
+import com.RandomMod.util.handlers.LootTableHandler;
 
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -16,6 +17,7 @@ import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
@@ -31,7 +33,7 @@ public class EntitySquirrel extends EntityCow{
 		this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIPanic(this, 2.0D));
         this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
-        this.tasks.addTask(3, new EntityAITempt(this, 1.25D, ModItems.BARNABIC_INGOT, false)); //add nut item
+        this.tasks.addTask(3, new EntityAITempt(this, 1.25D, ModItems.ACORN, false)); //add nut item
         this.tasks.addTask(4, new EntityAIFollowParent(this, 1.25D));
         this.tasks.addTask(5, new EntityAIWanderAvoidWater(this, 1.0D));
         this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
@@ -70,4 +72,12 @@ public class EntitySquirrel extends EntityCow{
 	protected SoundEvent getDeathSound() {
 		return super.getDeathSound();
 	}
+	
+	@Override
+	protected ResourceLocation getLootTable() {
+		return LootTableHandler.SQUIRREL;
+	}
+	
+	
+	
 }

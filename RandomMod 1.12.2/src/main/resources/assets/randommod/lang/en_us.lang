@@ -23,6 +23,7 @@ item.donut.name=Donut
 item.pretzel.name=Pretzel
 item.glazed_donut.name=Glazed Donut
 item.powdered_donut.name=Powdered Donut
+item.acorn.name=Acorn
 
 //Tabs
 itemGroup.randomtab=Random Mod

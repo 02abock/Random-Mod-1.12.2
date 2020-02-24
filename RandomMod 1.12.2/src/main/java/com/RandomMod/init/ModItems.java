@@ -30,6 +30,7 @@ public class ModItems
 	public static final Item FLOUR = new ItemBase("flour");
 	public static final Item POWDERED_SUGAR = new ItemBase("powdered_sugar");
 	public static final Item GLAZE = new ItemBase("glaze");
+	public static final Item ACORN = new ItemBase("acorn");
 	
 	//tools
 	public static final ItemSword PICKLE_SWORD = new ToolSword("pickle_sword", MATERIAL_PICKLE);
