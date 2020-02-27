@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": 
+    [
+        "g",
+        "d",
+    ],
+    
+    "key": 
+    {
+        "g": {"item": "randommod:glaze"},
+        "d": {"item": "randommod:donut"}
+    },
+    
+    "result": {"item": "randommod:glazed_donut"}
+}

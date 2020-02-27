@@ -5,11 +5,14 @@ import java.util.List;
 
 import com.RandomMod.items.ItemBase;
 import com.RandomMod.items.food.FoodBase;
+import com.RandomMod.items.food.FoodEffectBase;
 import com.RandomMod.items.tools.ToolSword;
 
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemSword;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems 
@@ -27,6 +30,7 @@ public class ModItems
 	public static final Item FLOUR = new ItemBase("flour");
 	public static final Item POWDERED_SUGAR = new ItemBase("powdered_sugar");
 	public static final Item GLAZE = new ItemBase("glaze");
+	public static final Item ACORN = new ItemBase("acorn");
 	
 	//tools
 	public static final ItemSword PICKLE_SWORD = new ToolSword("pickle_sword", MATERIAL_PICKLE);
@@ -37,14 +41,14 @@ public class ModItems
 	//public static final ItemHoe BARNABIC_HOE = new ToolHoe("barnabic_hoe", MATERIAL_BARNABIC);
 	
 	//food
-	public static final Item DOUGH = new FoodBase("dough", 1, 0.1f, false);
-	public static final Item UNBAKED_ELONGATED_DONUT = new FoodBase("unbaked_elongated_donut", 1, 0.1f, false);
-	public static final Item UNBAKED_DONUT = new FoodBase("unbaked_donut", 1, 0.1f, false);
-	public static final Item UNBAKED_PRETZEL = new FoodBase("unbaked_pretzel", 1, 0.1f, false);
-	public static final Item ELONGATED_DONUT = new FoodBase("elongated_donut", 3, 0.2f, false);
-	public static final Item PRETZEL = new FoodBase("pretzel", 3, 0.2f, false);
-	public static final Item DONUT = new FoodBase("donut", 3, 0.2f, false);
-	public static final Item GLAZED_DONUT = new FoodBase("glazed_donut", 3, 0.3f, false);
-	public static final Item POWDERED_DONUT = new FoodBase("powdered_donut", 3, 0.3f, false);
+	public static final Item DOUGH = new FoodEffectBase("dough", 1, 0.1f, false, new PotionEffect(MobEffects.NAUSEA, (30*10), 0, false, true)); //nausea for 15 secs
+	public static final Item UNBAKED_ELONGATED_DONUT = new FoodEffectBase("unbaked_elongated_donut", 1, 0.1f, false, new PotionEffect(MobEffects.NAUSEA, (30*10), 0, false, true));//nausea for 15 secs
+	public static final Item UNBAKED_DONUT = new FoodEffectBase("unbaked_donut", 1, 0.1f, false, new PotionEffect(MobEffects.NAUSEA, (30*10), 0, false, true)); //nausea for 15 secs
+	public static final Item UNBAKED_PRETZEL = new FoodEffectBase("unbaked_pretzel", 1, 0.1f, false, new PotionEffect(MobEffects.NAUSEA, (30*10), 0, false, true)); //nausea for 15 secs
+	public static final Item ELONGATED_DONUT = new FoodEffectBase("elongated_donut", 3, 0.2f, false, new PotionEffect(MobEffects.SPEED, (60*10), 0, false, true)); //speed for 30 secs
+	public static final Item PRETZEL = new FoodEffectBase("pretzel", 3, 0.2f, false, new PotionEffect(MobEffects.SPEED, (60*10), 0, false, true)); //speed for 30 secs
+	public static final Item DONUT = new FoodEffectBase("donut", 3, 0.2f, false, new PotionEffect(MobEffects.SPEED, (60*10), 0, false, true)); //speed for 30 secs
+	public static final Item GLAZED_DONUT = new FoodEffectBase("glazed_donut", 3, 0.3f, false, new PotionEffect(MobEffects.SPEED, (60*15), 0, false, true)); //speed for 45 secs
+	public static final Item POWDERED_DONUT = new FoodEffectBase("powdered_donut", 3, 0.3f, false, new PotionEffect(MobEffects.SPEED, (60*15), 0, false, true)); //speed for 45 secs
 
 }

@@ -1,0 +1,25 @@
+{
+    "pools": [
+        {
+			"name": "SquirrelMain",
+            "rolls": 1,
+            "bonus_rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "randommod:acorn",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
