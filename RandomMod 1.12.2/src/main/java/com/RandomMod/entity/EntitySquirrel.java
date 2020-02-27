@@ -22,7 +22,10 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
 public class EntitySquirrel extends EntityCow{
-
+	
+	private static int MAX_INVENTORY = 5; //a squirrel can have at most 5 acorns on it
+	private int acornCount = 0; //the number of acorns in the squirrel's inventory
+	
 	public EntitySquirrel(World worldIn) 
 	{
 		super(worldIn);
@@ -76,6 +79,11 @@ public class EntitySquirrel extends EntityCow{
 	@Override
 	protected ResourceLocation getLootTable() {
 		return LootTableHandler.SQUIRREL;
+	}
+	
+	protected int getInventory() 
+	{
+		return acornCount;
 	}
 	
 	
