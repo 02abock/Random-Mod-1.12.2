@@ -1,5 +1,7 @@
 //Items
 item.barnabic_ingot.name=Barnabic Ingot
+item.super_charged_barnabic_ingot.name=SUPER Charged Barnabic Ingot
+item.super_charged_barnabic_sword.name=SUPER Charged Barnabic Sword
 item.flour.name=Flour
 item.powdered_sugar.name=Powdered Sugar
 item.glaze.name=Glaze

@@ -23,10 +23,11 @@ public class ModItems
 	
 	//materials
 	public static final ToolMaterial MATERIAL_PICKLE = EnumHelper.addToolMaterial("material_pickle", 3, 100000, 8.0f, 100.0f, 10);
-	//public static final ToolMaterial MATERIAL_BARNABIC = EnumHelper.addToolMaterial(whatever u want);
+	public static final ToolMaterial MATERIAL_T2BARNABIC = EnumHelper.addToolMaterial("material_T2_Barnabic", 3,3000,12.0f,7.0f,16);
 	
 	//items
 	public static final Item BARNABIC_INGOT= new ItemBase("barnabic_ingot");
+	public static final Item SUPER_CHARGED_BARNABIC_INGOT=new ItemBase("super_charged_barnabic_ingot");
 	public static final Item FLOUR = new ItemBase("flour");
 	public static final Item POWDERED_SUGAR = new ItemBase("powdered_sugar");
 	public static final Item GLAZE = new ItemBase("glaze");
@@ -34,9 +35,8 @@ public class ModItems
 	
 	//tools
 	public static final ItemSword PICKLE_SWORD = new ToolSword("pickle_sword", MATERIAL_PICKLE);
-	//public static final ItemSword BARNABIC_SWORD = new ToolSword("barnabic_sword", MATERIAL_BARNABIC);
-	//public static final ItemSpade BARNABIC_SHOVEL = new ToolSpade("barnabic_shovel", MATERIAL_BARNABIC);
-	//public static final ItemPickaxe BARNABIC_PICKAXE = new ToolPickaxe("barnabic_pickaxe", MATERIAL_BARNABIC);
+	public static final ItemSword BARNABIC_SWORD = new ToolSword("super_charged_barnabic_sword", MATERIAL_T2BARNABIC);
+	//public static final ItemPickaxe T2BARNABIC_PICKAXE = new ToolPickaxe("t2_barnabic_pickaxe", MATERIAL_BARNABIC);
 	//public static final ItemAxe BARNABIC_AXE = new ToolAxe("barnabic_axe", MATERIAL_BARNABIC);
 	//public static final ItemHoe BARNABIC_HOE = new ToolHoe("barnabic_hoe", MATERIAL_BARNABIC);
 	
