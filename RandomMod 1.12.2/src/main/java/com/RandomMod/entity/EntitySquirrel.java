@@ -1,5 +1,6 @@
 package com.RandomMod.entity;
 
+import com.RandomMod.entity.ai.EntityAISquirrelAcornActions;
 import com.RandomMod.init.ModItems;
 import com.RandomMod.util.handlers.LootTableHandler;
 
@@ -15,7 +16,6 @@ import net.minecraft.entity.ai.EntityAIWanderAvoidWater;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
@@ -24,12 +24,14 @@ import net.minecraft.world.World;
 public class EntitySquirrel extends EntityCow{
 	
 	private static int MAX_INVENTORY = 5; //a squirrel can have at most 5 acorns on it
-	private int acornCount = 0; //the number of acorns in the squirrel's inventory
+	private int acornCount = 2; //the number of acorns in the squirrel's inventory
 	
 	public EntitySquirrel(World worldIn) 
 	{
 		super(worldIn);
 		this.setSize(0.3f, 0.5f);
+		
+		this.setCanPickUpLoot(true);
 	}
 	@Override
 	protected void initEntityAI() {
@@ -41,6 +43,7 @@ public class EntitySquirrel extends EntityCow{
         this.tasks.addTask(5, new EntityAIWanderAvoidWater(this, 1.0D));
         this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
         this.tasks.addTask(7, new EntityAILookIdle(this));
+        this.tasks.addTask(10, new EntityAISquirrelAcornActions(this));
 	}
 	
 	@Override
@@ -81,7 +84,7 @@ public class EntitySquirrel extends EntityCow{
 		return LootTableHandler.SQUIRREL;
 	}
 	
-	protected int getInventory() 
+	public int getInventory() 
 	{
 		return acornCount;
 	}
