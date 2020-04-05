@@ -13,6 +13,7 @@ public class CheeseBlock extends BlockBase
 		setHardness(5.0f); //how long it takes to break
 		setResistance(5.0f); //how resistant to explosives
 		setHarvestLevel("sword", 1); // 0-3 wood to diamond
+		setLightOpacity(0);
 	}
 
 }
